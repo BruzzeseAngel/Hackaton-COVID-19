@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Graficas COVID-19</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div id="contenedor-estadisticas"></div>
-    <script src="app.js"></script>
+<body class="bg-slate-800 text-gray-300">
+<header class="text-center font-serif border-b border-gray-400">
+    <div class="justify-center gap-3 items-center flex">
+        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Covid Icons by Streamline - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7.851 4.958L6.215 3.322a2.046 2.046 0 0 0-2.893 2.893l1.6 1.694m11.227 11.133l1.636 1.636a2.046 2.046 0 0 0 2.893-2.893l-1.636-1.636m-14.084 0l-1.636 1.636a2.046 2.046 0 0 0 2.893 2.893l1.636-1.637M19.075 7.909l1.589-1.694a2.047 2.047 0 1 0-2.893-2.893L16.14 4.953"/><path stroke-linecap="round" stroke-linejoin="round" d="M21.205 9.955h-1.291a8.18 8.18 0 0 0-5.869-5.869V2.8a2.045 2.045 0 0 0-4.09 0v1.286a8.18 8.18 0 0 0-5.869 5.869H2.8a2.045 2.045 0 0 0 0 4.09h1.286a8.18 8.18 0 0 0 5.869 5.869v1.291a2.045 2.045 0 0 0 4.09 0v-1.291a8.18 8.18 0 0 0 5.869-5.869h1.291a2.045 2.045 0 1 0 0-4.09"/><path stroke-linecap="round" stroke-linejoin="round" d="M13.534 13.023a2.557 2.557 0 1 0 0-5.114a2.557 2.557 0 0 0 0 5.114"/><path d="M9.443 15.955a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75"/></g></svg>
+        <div class="text-6xl">Informativo COVID-19</div>
+    </div>
+    <br>
+    <div class="text-xl pb-4">Angel Bruzzese y Pablo Arriagada</div>
+</header>
+<main class="flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
+    <div class="max-w-2xl rounded-xl overflow-hidden shadow-lg py-8 mx-auto bg-slate-500 m-4">
+        <div class="font-bold text-xl mb-2">Info Mundial</div>
+        <p>Info de graficos iria aqui si tuviera alguna</p>
+    </div>
+    <div class="max-w-2xl rounded-2xl overflow-hidden shadow-lg py-8 mx-auto md:scale-110 relative z-10 bg-slate-500 m-8">
+        <div class="font-bold text-xl mb-2">Info Chile</div>
+        <p>Info de graficos iria aqui si tuviera alguna</p>
+
+    </div>
+    <div class="max-w-2xl rounded-xl overflow-hidden shadow-lg py-8 mx-auto bg-slate-500 m-4">
+        <div class="font-bold text-xl mb-2">Info Continental</div>
+        <p>Info de graficos iria aqui si tuviera alguna</p>
+
+    </div>
+</main>
+<div id="contenedor-estadisticas"></div>
+<script src="app.js"></script>
 </body>
+<footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-body sm:text-center">© 2026 <a class="hover:underline">Angel Bruzzese y Pablo Arriagada</a>.
+    </span>
+        <div class="flex flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">Recursos utilizados</div>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-body sm:mt-0">
+            <li>
+                <a href="https://disease.sh/" class="hover:underline me-4 md:me-6">disease.sh</a>
+            </li>
+            <li>
+                <a href="https://tailwindcss.com/plus" class="hover:underline me-4 md:me-6">Tailwind CSS</a>
+            </li>
+            <li>
+                <a href="https://github.com/?locale=es-419" class="hover:underline me-4 md:me-6">Github</a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </html>
